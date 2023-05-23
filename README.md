@@ -5,6 +5,10 @@ Kafka code examples
 ## Setup
 
 1. Install Kafka from [here](https://kafka.apache.org/downloads)
+1. Cleanup any old logs
+    ```
+    rm -rf /tmp/kafka-logs /tmp/zookeeper
+    ```
 1. Start ZooKeeper
     ```
     bin/zookeeper-server-start.sh config/zookeeper.properties
