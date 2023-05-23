@@ -1,11 +1,11 @@
 spring:
   kafka:
     bootstrap-servers: localhost:9092
-    client-id: chat-producer
+    client-id: hello-kafka
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: com.nytins.kafka.HelloSerializer
+      value-serializer: com.nytins.kafka.regular.HelloSerializer
     consumer:
-      group-id: chat-group
+      group-id: hello-consumer
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: com.nytins.kafka.HelloDeserializer
+      value-deserializer: com.nytins.kafka.regular.HelloDeserializer

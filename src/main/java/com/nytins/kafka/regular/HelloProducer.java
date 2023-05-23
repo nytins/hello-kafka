@@ -1,4 +1,4 @@
-package com.nytins.kafka;
+package com.nytins.kafka.regular;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -18,7 +18,7 @@ public class HelloProducer implements CommandLineRunner {
     }
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args) {
         HelloEvent event = new HelloEvent();
         event.setName(LocalDateTime.now().toString());
         kafkaTemplate.send("hello-topic", event);

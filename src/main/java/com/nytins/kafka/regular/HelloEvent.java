@@ -1,8 +1,8 @@
-package com.nytins.kafka;
+package com.nytins.kafka.regular;
 
 import lombok.Data;
 
 @Data
-public class HelloEvent {
+class HelloEvent {
     private String name;
 }

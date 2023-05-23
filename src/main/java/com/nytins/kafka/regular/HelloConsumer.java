@@ -1,4 +1,4 @@
-package com.nytins.kafka;
+package com.nytins.kafka.regular;
 
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;

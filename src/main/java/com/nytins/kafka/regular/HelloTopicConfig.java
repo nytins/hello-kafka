@@ -1,4 +1,4 @@
-package com.nytins.kafka;
+package com.nytins.kafka.regular;
 
 import org.apache.kafka.clients.admin.NewTopic;
 import org.springframework.context.annotation.Bean;
