@@ -21,3 +21,22 @@ Kafka code examples
     helloEvent = HelloEvent(name=2023-05-23T11:36:15.470)
     ```
 
+## Stream example
+
+1. Listen and consume messages from `output-topic`
+    ```
+    bin/kafka-console-consumer.sh --topic output-topic --from-beginning --bootstrap-server localhost:9092
+    ```
+1. Run `HelloStreamApp`
+1. Produce messages to `input-topic`
+    ```
+    bin/kafka-console-producer.sh --topic input-topic --bootstrap-server localhost:9092
+    >aaa
+    >bbb
+    ```
+1.  You should see the capitalized messages in the output-topic terminal
+    ```
+    bin/kafka-console-consumer.sh --topic output-topic --from-beginning --bootstrap-server localhost:9092
+    AAA
+    BBB
+    ```

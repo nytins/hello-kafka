@@ -2,6 +2,8 @@ spring:
   kafka:
     bootstrap-servers: localhost:9092
     client-id: hello-kafka
+    streams:
+      application-id: hello-stream
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: com.nytins.kafka.regular.HelloSerializer
